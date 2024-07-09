@@ -3,18 +3,21 @@ package com.prueba.tipocambio.domain;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Data
+@Entity
 public class ShiftData {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Double amount;
+    private double amount;
+    private double convertedAmount;
+    private String sourceCurrency;
     private String targetCurrency;
-    private String originalCurrency;
-    private Double exchangeRate;
+    private double exchangeRate;
 
 }

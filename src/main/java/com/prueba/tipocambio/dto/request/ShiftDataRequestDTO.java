@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ShiftDataRequestDTO {
 
-    private Double amount;
-    private String originalCurrency;
+    private double amount;
+    private String sourceCurrency;
     private String targetCurrency;
 
 }

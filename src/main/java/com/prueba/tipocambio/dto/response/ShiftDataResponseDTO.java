@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ShiftDataResponseDTO {
 
-    private Double amount;
-    private Double amountMoreType;
-    private String originalCurrency;
+    private double amount;
+    private double convertedAmount;
+    private String sourceCurrency;
     private String targetCurrency;
-    private Double amountEnd;
+    private double exchangeRate;
 
 }
